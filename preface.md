@@ -72,3 +72,9 @@ See chapter Practice, *how to use vim&git to find which software versions contai
 the code of a specific line*.
 
 
+{% dot %}
+graph graphname {
+  a -- b -- c;
+  b -- d;
+}
+{% enddot %}

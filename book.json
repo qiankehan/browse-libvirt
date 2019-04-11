@@ -1,0 +1,10 @@
+{
+    "gitbook": "3.x.x",
+    "plugins": ["dot"],
+    "pluginsConfig": {
+      "dot": {
+      "bin": "/usr/bin/dot",
+      "args": ["-x"]
+    }
+    }
+}
