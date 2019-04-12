@@ -1,0 +1,34 @@
+# Deploy book Let's Browse Libvirt Code
+# Online url: https://github.com/qiankehan/browse-libvirt.github.io
+# Source url: https://github.com/qiankehan/browse-libvirt
+# Author: Han Han <hhan@redhat.com>
+
+language: node_js
+
+node_js:
+- "10"
+
+branches:
+  only:
+  - master
+
+before_install:
+- npm install -g gitbook-cli
+
+install:
+- npm install
+
+before_script:
+- git config --global user.name 'Han Han(travisi-ci)'
+- git config --global user.email 'hhan@redhat.com'
+
+script:
+- gitbook install
+- gitbook build
+
+after_success:
+- cd _book
+- git init && git remote add -t master origin $DEPLOY_REPO
+- git add -A .
+- git commit -m "Site update $(date)"
+- git push -q -u origin master --force
