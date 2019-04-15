@@ -1,6 +1,25 @@
-# Preface
-## What is libvirt
-[Libvirt](https://libvirt.org/) is a toolkit to manage [virtualization platforms](https://libvirt.org/drivers.html#hypervisor). 
+# What is libvirt
+[Libvirt](https://libvirt.org/) is a toolkit to manage virtualization platforms.
+
+## What libvirt can do
+- Manage virtualization hypervisors: 
+[QEMU/KVM](https://libvirt.org/drvqemu.html), 
+[Xen](https://libvirt.org/drvxen.html), 
+[Virtuozzo](https://libvirt.org/drvvirtuozzo.html), 
+[OpenVZ](https://libvirt.org/drvopenvz.html), 
+[VMWare ESX](https://libvirt.org/drvesx.html), 
+[VMware Workstation/Player/Fusion](https://libvirt.org/drvvmware.html), 
+[VirtualBox](https://libvirt.org/drvvbox.html), 
+[LXC](https://libvirt.org/drvlxc.html), 
+[BHyve](https://libvirt.org/drvbhyve.html), 
+[IBM PowerVM](https://libvirt.org/drvphyp.html), 
+[Microsoft Hyper-V](https://libvirt.org/drvhyperv.html)
+- Manage host resources: 
+[storages](https://libvirt.org/storage.html), 
+[networks](https://libvirt.org/formatnetwork.html), 
+[host node devices](https://libvirt.org/drvnodedev.html), 
+[network filters](https://libvirt.org/formatnwfilter.html), 
+[host interfaces](https://libvirt.org/devhelp/libvirt-libvirt-interface.html)
 
 ## Preparation to review the code
 ### Download the code
@@ -14,7 +33,7 @@ Git is powerful version-control system for tracking changes in source code.
 The following git sub-commands are useful for browsing the code.
 ### git log
 Git log is to show the commits history of the source code.  
-Run it directly in the source code dir then get the commits from the last to the first:
+Run it directly in the source code directory then get the commits from the last to the first:
 ```sh
 git log
 ```
