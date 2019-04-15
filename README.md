@@ -14,7 +14,7 @@ its directory, then `gitbook install`
 To finish following chapters:
 - What is libvirt
 - How to build libvirt
-- Diratory Structure
+- Directory Structure
 - Read and improve the doc
 - Libvirt APIs example
 - Commit style
