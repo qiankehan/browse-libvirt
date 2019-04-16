@@ -42,9 +42,9 @@ the configuration options and influential environment variables.
 Build libvirt by [make](https://en.wikipedia.org/wiki/Make_%28software%29). Run 
 *make* command by your purpose:
 - build libvirt project: `make`
-- build libvirt doc html only: `make html`
 - check the code syntax only: `make syntax-check`
 - build libvirt and run unit tests: `make check`
+- build libvirt and its rpm packages `make rpm`
 
 ## Installation
 For rpm target files, install and uninstall them by *rpm*. The rpm files are in 
